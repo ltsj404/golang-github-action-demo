@@ -21,6 +21,11 @@ jobs:
     # 编译
     - name: Build
       run: go build -v ./...
+    # 风格检查
+    - name: golangci-lint
+      uses: golangci/golangci-lint-action@v2
+      with:
+        version: v1.29
 
     - name: Test
       run: go test -v ./...
