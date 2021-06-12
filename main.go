@@ -1,13 +1,13 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
-func Cat() string {
-	return "Wang..."
-	// return "Miao..."
+func Cat() {
+	fmt.Println("Miao...")
 }
 
 func main() {
-	saying := Cat()
-	fmt.Print(saying)
+	Cat()
 }
