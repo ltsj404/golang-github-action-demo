@@ -4,7 +4,8 @@ import "fmt"
 
 func Cat() string {
 	//return "Wang...."
-	return "Miao..."
+	word := "Miao"
+	return fmt.Sprintf("%s~~~~", word)
 }
 
 func main() {
