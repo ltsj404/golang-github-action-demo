@@ -9,15 +9,16 @@ on:
 jobs:
 
   myci:
+    # 运行环境
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-
+    # go 的环境
     - name: Set up Go
       uses: actions/setup-go@v2
       with:
         go-version: 1.15
-
+    # 编译
     - name: Build
       run: go build -v ./...
 
