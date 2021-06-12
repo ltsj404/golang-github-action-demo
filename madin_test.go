@@ -6,7 +6,7 @@ import (
 
 func TestCat(t *testing.T) {
 	saying := Cat()
-	if saying != "Miao..." {
+	if saying != "Miao~~~~" {
 		t.Errorf("Cat say %s", saying)
 	}
 }
