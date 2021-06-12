@@ -24,7 +24,3 @@ jobs:
 
     - name: Test
       run: go test -v ./...
-  
-  mycd:
-
-
